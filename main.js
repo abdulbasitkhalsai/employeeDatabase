@@ -40,9 +40,9 @@ collectionOfEmployees.pop();
 console.log(collectionOfEmployees);
 //Modify Employee Database
 function modifyDatabase(key, employee, value) {
-    [collectionOfEmployees][employee][`${key}`] = value;
+    collectionOfEmployees[employee][`${key}`] = value;
 }
-modifyDatabase("salary", 0, 9441161);
+modifyDatabase("empID", 0, 15792);
 console.log(collectionOfEmployees);
 // Edit Salary
 function editSalary(Employee, salary) {
@@ -58,15 +58,3 @@ function updateSalary(increment) {
 }
 updateSalary(5999);
 export {};
-// console.log(collectionOfEmployees);
-// let a = await inquirer.prompt(
-//     [
-//     {
-//         message: "Enter Employee Name",
-//         name: "Employee Name",
-//         type: "text",
-//     },
-//     {
-//     } 
-//     ]
-// )

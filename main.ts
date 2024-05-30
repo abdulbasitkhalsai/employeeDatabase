@@ -56,10 +56,10 @@ console.log(collectionOfEmployees)
 
 //Modify Employee Database
 function modifyDatabase(key : "empID" | "salary", employee : number, value : number) {
-    [collectionOfEmployees][employee][`${key}`]=value;
+    collectionOfEmployees[employee][`${key}`]=value;
 }
 
-modifyDatabase("salary", 0, 9441161)
+modifyDatabase("empID", 0, 15792)
 console.log(collectionOfEmployees);
 
 
@@ -79,18 +79,3 @@ function updateSalary(increment : number){
     }  
 }
 updateSalary(5999);
-// console.log(collectionOfEmployees);
-
-// let a = await inquirer.prompt(
-//     [
-//     {
-//         message: "Enter Employee Name",
-//         name: "Employee Name",
-//         type: "text",
-//     },
-//     {
-
-//     } 
-        
-//     ]
-// )
